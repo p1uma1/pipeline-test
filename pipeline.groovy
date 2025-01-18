@@ -7,7 +7,7 @@ pipeline {
             steps {
                 script {
                     echo 'Compiling C++ file...'
-                    sh 'g++ -o main main.cpp'
+                    bat 'g++ -o main main.cpp'
                 }
             }
         }
@@ -16,7 +16,7 @@ pipeline {
             steps {
                 script {
                     echo 'Running the compiled program...'
-                    sh './main'
+                    bat './main'
                 }
             }
         }
