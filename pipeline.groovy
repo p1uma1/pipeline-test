@@ -16,7 +16,7 @@ pipeline {
             steps {
                 script {
                     echo 'Running the compiled program...'
-                    bat './main'
+                    bat 'main.exe'
                 }
             }
         }
