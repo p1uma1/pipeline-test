@@ -2,12 +2,6 @@ pipeline {
     agent any
 
     stages {
-        stage('Clone Repository') {
-            steps {
-                // Replace with your GitHub repository URL
-                git branch: 'main', url: 'https://github.com/p1uma1/pipeline-test.git'
-            }
-        }
 
         stage('Build') {
             steps {
